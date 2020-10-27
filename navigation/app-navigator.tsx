@@ -4,39 +4,37 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { HomeScreen } from "../screens/home/home.screen";
 import { ProfileScreen } from "../screens/profile/profile.screen";
-import { Button } from "react-native";
+import { HeaderRight } from "./header-right";
+import { BlogsScreen } from "../screens/blogs/blogs.screen";
 
 const Stack: any = createStackNavigator();
+
+const screenOptions = {
+    title: 'Blogger',
+    headerStyle: {
+        backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+    },
+    headerRight: () => (
+        <HeaderRight />
+    )
+};
 
 export const AppNavigator = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                screenOptions={{
-                    title: 'Blogger',
-                    headerStyle: {
-                        backgroundColor: '#f4511e',
-
-                    },
-                    headerTintColor: '#fff',
-                    headerTitleStyle: {
-                        fontWeight: 'bold',
-                    },
-                    headerRight: () => (
-                        <Button
-                          onPress={() => console.log('This is a button!')}
-                          title="Info"
-                          color="#fff"
-                        />
-                      )
-                }}
+                screenOptions={screenOptions}
             >
                 <Stack.Screen
                     name="Home"
                     component={HomeScreen}
-                    options={{ title: 'Welcome' }}
                 />
                 <Stack.Screen name="Profile" component={ProfileScreen} />
+                <Stack.Screen name="Blogs" component={BlogsScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

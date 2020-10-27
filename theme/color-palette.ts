@@ -1,0 +1,8 @@
+
+
+export const COLORS = {
+    TEXT_COLOR: '#696969',
+    DEFAULT_BACKGROUND: '#87CEFA',
+    BLOG_BACKGROUND: '#B0C4DE',
+    APP_BACKGROUND: '#B0E0E6'
+}

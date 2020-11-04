@@ -5735,6 +5735,11 @@ react-native-screens@^2.11.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.11.0.tgz#34b30b07c2d04aa100cba984b944b303bfa43ea6"
   integrity sha512-vJzJE3zI1XUtqthrX3Dh2TBQWB+xFyaGhF52KBq9FjJUN5ws4xpLZJxBWa1KbGV3DilmcSZ4jmZR5LGordwE7w==
 
+react-native-wizard@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-wizard/-/react-native-wizard-2.1.0.tgz#513be620d3e94790d9b40b532d1027036a02584e"
+  integrity sha512-GUkQcbZERHsx3WEyNC+9cVGo4NwrXOB1tsFgbcSoEYn1yO+3fqbiC2I8dVqzl9+KZpyDqI9BcQJbNe/X2EgUlQ==
+
 react-native@0.63.3:
   version "0.63.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.3.tgz#4a7f6540e049ff41810887bbd1125abc4672f3bf"

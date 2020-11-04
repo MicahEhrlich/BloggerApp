@@ -6,11 +6,12 @@ import { HomeScreen } from "../screens/home/home.screen";
 import { ProfileScreen } from "../screens/profile/profile.screen";
 import { HeaderRight } from "./header-right";
 import { BlogsScreen } from "../screens/blogs/blogs.screen";
+import { NewTripScreen } from "../screens/new-trip/new-trip.screen";
 
 const Stack: any = createStackNavigator();
 
 const screenOptions = {
-    title: 'Blogger',
+    title: 'Travelapp',
     headerStyle: {
         backgroundColor: '#f4511e',
     },
@@ -30,8 +31,8 @@ export const AppNavigator = () => {
                 screenOptions={screenOptions}
             >
                 <Stack.Screen
-                    name="Home"
-                    component={HomeScreen}
+                    name="NewTripScreen"
+                    component={NewTripScreen}
                 />
                 <Stack.Screen name="Profile" component={ProfileScreen} />
                 <Stack.Screen name="Blogs" component={BlogsScreen} />
